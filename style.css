@@ -1,0 +1,107 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+/* Menu */
+.menu {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  gap: 2em;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  color: yellow;
+}
+
+/* Header Section */
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2em;
+  background-color: #fff;
+}
+
+.header .text {
+  padding-right: 2em;
+}
+
+.header img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Biodata Section */
+.biodata {
+  padding: 2em;
+  background-color: #e0f7fa;
+  text-align: center;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+  margin-top: 1em;
+}
+
+.grid-3 div {
+  background-color: #ffffff;
+  padding: 1em;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+/* Portofolio Section */
+.portofolio {
+  padding: 2em;
+  background-color: #fff3e0;
+  text-align: center;
+}
+
+.portofolio .grid-3 div {
+  background-color: #fff;
+}
+
+/* Button */
+button {
+  padding: 10px 20px;
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1976D2;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 1em;
+  }
+}
